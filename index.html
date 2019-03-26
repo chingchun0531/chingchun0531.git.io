@@ -64,19 +64,22 @@
  <source src="https://video-nrt1-1.xx.fbcdn.net/v/t42.3356-2/55290270_851913445145878_8284221572944756736_n.mp4/video-1552619543.mp4?_nc_cat=102&vabr=2707626&_nc_ht=video-nrt1-1.xx&oh=461a16f27e5dad411276b675c78aea27&oe=5C9B4CE3&dl=1">
  </video>
 <center>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("div").animate({
-      height: 'toggle'
-    });
+  $("#hide").click(function(){
+    $("div").hide();
+  });
+  $("#show").click(function(){
+    $("div").show();
   });
 });
-</script> 
+</script>
 </head>
+<p>小彩蛋</p>
 <body>
-<button>Start Animation</button>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
 <div><img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.15752-9/53857794_331381967502228_4149369193155788800_n.jpg?_nc_cat=104&_nc_ht=scontent.ftpe7-2.fna&oh=4a2e1bbae63311932695e3409ec27dbb&oe=5D1FDECF"width="300" height="450"></a>
 </div>
 </body>
